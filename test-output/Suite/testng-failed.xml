@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Academy.Listeners"/>
+  </listeners>
+  <test name="NavgationbarTest(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+      <class name="Academy.Homepage">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.Homepage -->
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="basepageNavigation"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- NavgationbarTest(failed) -->
+  <test name="homepageTest(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+      <class name="Academy.Homepage">
+        <methods>
+          <include name="basepageNavigation"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.Homepage -->
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- homepageTest(failed) -->
+  <test name="titleTest(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.validateTitle">
+        <methods>
+          <include name="validateHeader"/>
+          <include name="basepageNavigation"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateTitle -->
+      <class name="Academy.Homepage">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.Homepage -->
+      <class name="Academy.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- titleTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
